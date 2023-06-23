@@ -20,5 +20,11 @@ public class Ex4
         System.out.println ("vector2.vectorMulti (vector1) = " + vector2.vectorMulti (vector1));
         
         System.out.println ("vector1.cos (vector2) = " + vector1.cos (vector2));
+        
+        System.out.println ("vector1.sum (vector2) = " + vector1.sum (vector2));
+        
+        System.out.println ("vector1.dif (vector2) = " + vector1.dif (vector2));
+        // тут должно получиться с противоположными знаками (противоположно направленный вектор)
+        System.out.println ("vector2.dif (vector1) = " + vector2.dif (vector1));
     }
 }

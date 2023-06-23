@@ -43,5 +43,23 @@ public record Vector(double x, double y, double z)
         return scalarMulti (v) / (modulus () * v.modulus ());
     }
     
-    // todo: методы сложения и вычитания
+    /**
+     * @param v слагаемый вектор
+     * @return результирующий вектор
+     * @apiNote определяет сумму векторов
+     */
+    public Vector sum (Vector v)
+    {
+        return new Vector (x + v.x, y + v.y, z + v.z);
+    }
+    
+    /**
+     * @param v вычитаемый вектор
+     * @return результирующий вектор
+     * @apiNote определяет разность векторов
+     */
+    public Vector dif (Vector v)
+    {
+        return new Vector (x - v.x, y - v.y, z - v.z);
+    }
 }
