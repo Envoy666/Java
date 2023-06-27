@@ -75,7 +75,7 @@ public class Ex1
      * @return true, если число - простое, иначе - false
      * @apiNote проверяет число на простоту
      */
-    private static boolean isPrime (int number)
+    public static boolean isPrime (int number)
     {
         if (number == 2 || number == 3) return true;
         if (number < 5 || (number & 1) == 0 || (number % 3) == 0) return false;
