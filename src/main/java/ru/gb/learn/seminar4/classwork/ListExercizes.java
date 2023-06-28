@@ -14,6 +14,7 @@ public class ListExercizes
         System.out.print ("Введите количество элементов: ");
         Scanner scanner = new Scanner (System.in);
         int n = scanner.nextInt ();
+        scanner.close ();
 //        int n = 10;
         LinkedList <Integer> list = generateList (n, -10, 10);
         // разнообразия ради, чтобы работало в том числе с учетом null
